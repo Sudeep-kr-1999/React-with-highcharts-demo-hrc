@@ -1,0 +1,247 @@
+.login-nav:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-nav:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 800px;
+  margin-left: 250px;
+  margin-right: 250px;
+  border-radius: 50px;
+  background-color: white;
+  backdrop-filter: blur(50px);
+}
+.login-label {
+  position: relative;
+  display: flex;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: blue;
+  text-shadow: 0px 0px 2px brown;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#user-login {
+  position: relative;
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+#user-login:focus {
+  outline: none;
+}
+.username-login {
+  position: relative;
+  margin: 20px;
+}
+.password-login {
+  position: relative;
+  margin: 20px;
+}
+
+#user-password {
+  position: relative;
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+
+#user-password:focus {
+  outline: none;
+}
+.sumbit-login-btn {
+  position: relative;
+  margin: 20px;
+}
+#login-submit,
+#login-close {
+  position: relative;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: aqua;
+  font-weight: bolder;
+  border-radius: 50px;
+  margin-right: 10px;
+  box-shadow: 0 4px 15px 0 rgb(116 79 168 / 75%);
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+#login-submit:hover,
+#login-close:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+#login-submit:active,
+#login-close:active {
+  transform: translateY(5px);
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 800px;
+  margin-left: 250px;
+  margin-right: 250px;
+  border-radius: 50px;
+  background-color: white;
+  backdrop-filter: blur(50px);
+}
+.register-label {
+  position: relative;
+  display: flex;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: blue;
+  text-shadow: 0px 0px 2px brown;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.register-name {
+  position: relative;
+  margin: 20px;
+}
+#name {
+  position: relative;
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+
+.register-user-name {
+  position: relative;
+  margin: 20px;
+}
+
+#register-name {
+  position: relative;
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+
+.register-email {
+  position: relative;
+  margin: 20px;
+}
+
+#email {
+  position: relative;
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+
+.register-phone-number {
+  position: relative;
+  margin: 20px;
+}
+
+#phone-number {
+  position: relative;
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+
+.register-password {
+  position: relative;
+  margin: 20px;
+}
+
+#user-password-register {
+  position: relative;
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+
+.user-register-button {
+  position: relative;
+  margin: 20px;
+}
+
+#submit-register-button,
+#register-close {
+  position: relative;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: aqua;
+  font-weight: bolder;
+  border-radius: 50px;
+  margin-right: 10px;
+  box-shadow: 0 4px 15px 0 rgb(116 79 168 / 75%);
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+#name:focus,
+#register-name:focus,
+#email:focus,
+#phone-number:focus,
+#user-password-register:focus {
+  outline: none;
+}
+
+#submit-register-button:hover,
+#register-close:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+#submit-register-button:active,
+#register-close:active {
+  transform: translateY(5px);
+}
