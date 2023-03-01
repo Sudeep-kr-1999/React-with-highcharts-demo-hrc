@@ -10,7 +10,7 @@ export const SignInComponent = () => {
             <div className="username-login">
               <input
                 type="text"
-                placeholder="UserName or Email or PhoneNumber (minimum 8 characters)"
+                placeholder="Email ID"
                 id="user-login"
               />
             </div>
@@ -20,6 +20,20 @@ export const SignInComponent = () => {
                 name="password"
                 id="user-password"
                 placeholder="Password (minimum 8 characters)"
+              />
+            </div>
+            <div className="showpassword-login relative flex pl-5">
+              <label
+                htmlFor="showpasslogin"
+                className="showpass-label-signin relative block text-gray-600 text-base font-semibold"
+              >
+                Show Password
+              </label>
+              <input
+                type="checkbox"
+                name="show-pass-login"
+                id="show-pass-login"
+                className="relative block mx-4"
               />
             </div>
             <div className="sumbit-login-btn">

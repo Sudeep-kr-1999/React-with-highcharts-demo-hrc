@@ -1,3 +1,4 @@
+/* NAVBAR JSX CSS  */
 .login-nav:hover {
   color: black;
   cursor: pointer;
@@ -10,6 +11,8 @@
   text-decoration: underline;
 }
 
+/* ------------------------------------------------------------------------------- */
+/* LOGIN JSX CSS */
 .login-container {
   display: flex;
   flex-direction: column;
@@ -48,9 +51,6 @@
   font-weight: bold;
   border-bottom: 2px solid blue;
 }
-#user-login:focus {
-  outline: none;
-}
 .username-login {
   position: relative;
   margin: 20px;
@@ -70,9 +70,6 @@
   border-bottom: 2px solid blue;
 }
 
-#user-password:focus {
-  outline: none;
-}
 .sumbit-login-btn {
   position: relative;
   margin: 20px;
@@ -104,6 +101,9 @@
   transform: translateY(5px);
 }
 
+
+/* ----------------------------------------------------------------------------------- */
+/* Register JSX CSS */
 .signup-container {
   display: flex;
   flex-direction: column;
@@ -132,34 +132,6 @@
   flex-direction: column;
   position: relative;
 }
-.register-name {
-  position: relative;
-  margin: 20px;
-}
-#name {
-  position: relative;
-  width: 500px;
-  padding: 10px;
-  border: none;
-  background-color: transparent;
-  font-weight: bold;
-  border-bottom: 2px solid blue;
-}
-
-.register-user-name {
-  position: relative;
-  margin: 20px;
-}
-
-#register-name {
-  position: relative;
-  width: 500px;
-  padding: 10px;
-  border: none;
-  background-color: transparent;
-  font-weight: bold;
-  border-bottom: 2px solid blue;
-}
 
 .register-email {
   position: relative;
@@ -176,12 +148,12 @@
   border-bottom: 2px solid blue;
 }
 
-.register-phone-number {
+.register-password {
   position: relative;
   margin: 20px;
 }
 
-#phone-number {
+#user-password-register {
   position: relative;
   width: 500px;
   padding: 10px;
@@ -191,12 +163,12 @@
   border-bottom: 2px solid blue;
 }
 
-.register-password {
+.register-password-again {
   position: relative;
   margin: 20px;
 }
 
-#user-password-register {
+#user-password-register-again {
   position: relative;
   width: 500px;
   padding: 10px;
@@ -225,14 +197,6 @@
   box-shadow: 0 4px 15px 0 rgb(116 79 168 / 75%);
   transition-property: all;
   transition-duration: 0.2s;
-}
-
-#name:focus,
-#register-name:focus,
-#email:focus,
-#phone-number:focus,
-#user-password-register:focus {
-  outline: none;
 }
 
 #submit-register-button:hover,
