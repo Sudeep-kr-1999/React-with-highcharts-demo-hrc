@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from "react";
-
 export const SignUpComponent = () => {
   const [registerState, setregisterState] = useState({
     email_signup: "",
@@ -21,6 +20,52 @@ export const SignUpComponent = () => {
     });
   }, []);
 
+  const resetHandler = useCallback(() => {
+    setregisterState({
+      email_signup: "",
+      password_register: "",
+      confirm_password_register: "",
+      show_pass_register: false,
+      show_pass_register_confirm: false,
+    });
+  }, []);
+
+  const submitHandler = useCallback(
+    (e) => {
+      e.preventDefault();
+      if (registerState.email_signup === "") {
+        alert("enter the email");
+      } else {
+        if (
+          registerState.password_register.length >= 8 &&
+          registerState.password_register ===
+            registerState.confirm_password_register
+        ) {
+          if (localStorage.getItem(registerState.email_signup) == null) {
+            localStorage.setItem(
+              registerState.email_signup,
+              registerState.password_register
+            );
+            localStorage.setItem(
+              `${registerState.email_signup}Status`,
+              "false"
+            );
+            alert(
+              "account created successfully redirecting to home page to login"
+            );
+            window.location.reload();
+          } else {
+            alert("Account already Exist");
+            window.location.reload();
+          }
+        } else {
+          alert("please enter valid password and confirm password");
+        }
+      }
+    },
+    [registerState]
+  );
+
   useEffect(() => {
     console.log(registerState);
   }, [registerState]);
@@ -30,7 +75,7 @@ export const SignUpComponent = () => {
       <div className="register-body-container">
         <div className="signup-container">
           <div className="register-label">Register</div>
-          <form className="register-form">
+          <form className="register-form" onSubmit={submitHandler}>
             <div className="register-email">
               <input
                 type="email"
@@ -100,7 +145,9 @@ export const SignUpComponent = () => {
               <button type="submit" id="submit-register-button">
                 Register
               </button>
-              <button id="register-close">Close</button>
+              <button id="register-close" type="reset" onClick={resetHandler}>
+                Reset
+              </button>
             </div>
           </form>
         </div>
