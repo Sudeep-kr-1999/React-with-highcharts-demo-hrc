@@ -41,7 +41,7 @@ export const SignInComponent = () => {
         }
       }
       if (localStorage.getItem(`${loginState.login_email}Status`) === "true") {
-        navigate("/dashboard");
+        navigate("/dashboard", { state: { name: loginState.login_email } });
       }
     },
     [loginState, navigate]

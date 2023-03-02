@@ -1,7 +1,22 @@
-import React from 'react'
-
+import React, { useCallback, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { ChartComponent } from "./ChartComponent";
 export const Dashboard = () => {
-  return (
-    <div>Dashboard</div>
-  )
-}
+  const location = useLocation();
+  const navigate = useNavigate();
+  const handleNavigation = useCallback(() => {
+    localStorage.setItem(`${location.state["name"]}Status`, "false");
+    navigate("/");
+  }, [navigate, location]);
+  useEffect(() => {
+    window.onbeforeunload = () => {
+      console.log("back button pressed");
+      handleNavigation();
+    };
+    if (location.state === null) {
+      navigate("/");
+    }
+  }, [navigate, handleNavigation, location]);
+
+  return location.state !== null ? <ChartComponent email={location.state['name']}/> : <div>error</div>;
+};
