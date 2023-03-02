@@ -80,7 +80,7 @@ export const ChartComponent = ({ email }) => {
         id="highcharts"
       ></div>
       <div className="footer relative flex items-center justify-center text-gray-600 font-bold pt-4">
-        All Rights Reserved © {email}- 2023
+        All Rights Reserved ©  {email}- 2023
       </div>
     </div>
   );
