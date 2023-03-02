@@ -10,7 +10,6 @@ export const Dashboard = () => {
   }, [navigate, location]);
   useEffect(() => {
     window.onbeforeunload = () => {
-      console.log("back button pressed");
       handleNavigation();
     };
     if (location.state === null) {

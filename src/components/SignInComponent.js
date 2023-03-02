@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const SignInComponent = () => {
@@ -54,10 +54,6 @@ export const SignInComponent = () => {
       show_pass_login: false,
     });
   }, []);
-
-  useEffect(() => {
-    console.log(loginState);
-  }, [loginState]);
 
   return (
     <div className="signin relative flex flex-1 bg-white items-center justify-center">

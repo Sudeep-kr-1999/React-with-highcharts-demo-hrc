@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 export const SignUpComponent = () => {
   const [registerState, setregisterState] = useState({
     email_signup: "",
@@ -39,7 +39,7 @@ export const SignUpComponent = () => {
         if (
           registerState.password_register.length >= 8 &&
           registerState.password_register ===
-            registerState.confirm_password_register
+          registerState.confirm_password_register
         ) {
           if (localStorage.getItem(registerState.email_signup) == null) {
             localStorage.setItem(
@@ -65,10 +65,6 @@ export const SignUpComponent = () => {
     },
     [registerState]
   );
-
-  useEffect(() => {
-    console.log(registerState);
-  }, [registerState]);
 
   return (
     <div className="signup relative flex flex-1 bg-white items-center justify-center">
