@@ -209,3 +209,16 @@
 #register-close:active {
   transform: translateY(5px);
 }
+
+
+/* ---------------------------------------------------------- */
+/* CHART JSX  */
+
+.logout_chart:hover{
+  color: darkblue;
+  cursor: pointer;
+}
+
+.topbar_chart{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
