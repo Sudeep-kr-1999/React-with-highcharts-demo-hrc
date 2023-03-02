@@ -6,7 +6,7 @@ export const FrontPage = () => {
       <div className="image-logo">
         <img src={logo} alt="logo"/>
       </div>
-      <div className="frontpage relative block bg-white text-8xl text-black font-bold">
+      <div className="frontpage relative block bg-transparent text-8xl text-black font-bold">
         Demo Project in React
       </div>
     </div>

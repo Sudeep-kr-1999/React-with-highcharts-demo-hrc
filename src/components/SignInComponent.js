@@ -56,12 +56,12 @@ export const SignInComponent = () => {
   }, []);
 
   return (
-    <div className="signin relative flex flex-1 bg-white items-center justify-center">
+    <div className="signin relative flex flex-1 bg-transparent items-center justify-center">
       <div className="login-body-container">
         <div className="login-container">
-          <div className="login-label">Login</div>
+          <div className="login-label relative">Login</div>
           <form className="login-form" onSubmit={signInSubmitHandler}>
-            <div className="username-login">
+            <div className="username-login relative">
               <input
                 type="email"
                 placeholder="Email ID"

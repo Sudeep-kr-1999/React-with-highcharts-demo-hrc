@@ -64,12 +64,12 @@ export const ChartComponent = ({ email }) => {
 
   return (
     <div className="chart_parent_container relative block w-screen">
-      <div className="topbar_chart relative flex h-14 items-center justify-between px-5 bg-green-200">
-        <span className="useremail relative block text-amber-800 text-xl font-semibold">
+      <div className="topbar_chart relative flex h-14 items-center justify-between px-5 bg-teal-900">
+        <span className="useremail relative block text-white text-xl font-semibold">
           {email}
         </span>
         <span
-          className="logout_chart relative block text-red-700 text-xl font-semibold"
+          className="logout_chart relative block text-white text-xl font-semibold"
           onClick={logoutHandler}
         >
           SignOut
@@ -79,8 +79,8 @@ export const ChartComponent = ({ email }) => {
         className="chartcomponents relative flex flex-1 h-[88%]"
         id="highcharts"
       ></div>
-      <div className="footer relative flex items-center justify-center text-gray-600">
-        All Rights Reserved ©{email}- 2023
+      <div className="footer relative flex items-center justify-center text-gray-600 font-bold pt-4">
+        All Rights Reserved © {email}- 2023
       </div>
     </div>
   );

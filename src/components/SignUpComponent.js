@@ -67,7 +67,7 @@ export const SignUpComponent = () => {
   );
 
   return (
-    <div className="signup relative flex flex-1 bg-white items-center justify-center">
+    <div className="signup relative flex flex-1 bg-transparent items-center justify-center">
       <div className="register-body-container">
         <div className="signup-container">
           <div className="register-label">Register</div>

@@ -1,14 +1,25 @@
 /* NAVBAR JSX CSS  */
+
+.signup-nav,.login-nav{
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 20%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:darkcyan;
+  text-shadow: 1px 1px darkgoldenrod;
+  font-size: x-large;
+
+}
 .login-nav:hover {
-  color: black;
+  color: darkred;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .signup-nav:hover {
-  color: black;
+  color: darkred;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -23,9 +34,10 @@
   width: 800px;
   margin-left: 250px;
   margin-right: 250px;
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: white;
   backdrop-filter: blur(50px);
+  box-shadow: 10px 10px 50px gray;
 }
 .login-label {
   position: relative;
@@ -113,9 +125,10 @@
   width: 800px;
   margin-left: 250px;
   margin-right: 250px;
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: white;
   backdrop-filter: blur(50px);
+  box-shadow: 10px 10px 50px gray;
 }
 .register-label {
   position: relative;
@@ -215,10 +228,10 @@
 /* CHART JSX  */
 
 .logout_chart:hover{
-  color: darkblue;
+  color: yellow;
   cursor: pointer;
 }
 
 .topbar_chart{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
